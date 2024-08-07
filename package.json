@@ -1,0 +1,52 @@
+{
+	"name": "my-portfolio",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"autoprefixer": "^10.4.20",
+		"gsap": "^3.12.5",
+		"postcss": "^8.4.41",
+		"postcss-loader": "^8.1.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-router": "^6.26.0",
+		"react-router-dom": "^6.26.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.15.0",
+		"@typescript-eslint/parser": "^7.15.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint": "^8.57.0",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-refresh": "^0.4.7",
+		"typescript": "^5.2.2",
+		"vite": "^5.3.4"
+	},
+	"description": "This portfolio webpage of Yehor Marchenko - front end developer.",
+	"main": "postcss.config.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Hideakimaru/MyPortfolio.git"
+	},
+	"keywords": [
+		"Yehor",
+		"Marchenko",
+		"portfolio",
+		"myportfolio"
+	],
+	"author": "Yehor Marchenko",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Hideakimaru/MyPortfolio/issues"
+	},
+	"homepage": "https://github.com/Hideakimaru/MyPortfolio#readme"
+}

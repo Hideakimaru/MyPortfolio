@@ -1,5 +1,7 @@
 *, *::before, *::after {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,9 +23,20 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+ul, li {
+	list-style: none;
+}
+
+button {
+	border: none;
+	outline: none;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+img {
 	display: block;
 }
 body {
@@ -55,11 +68,61 @@ a, a:hover, a:active {
 }
 /* Base Styles end */
 
+/* General styles */
+
+.container {
+	padding: 0 5%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+	background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	width: 100%;
+	background: var(--secondary-color);
+	border-radius: 5px;
+}
+
+/* General styles end */
+
 :root {
-	--white:#ffffff;
+	--primary-color: #27ae60;
+	--secondary-color: #abb2bf;
+	--white-color:#ffffff;
 	--tw-indigo-600: #4f46e5;
 	--tw-indigo-500: #6366f1;
 	--tw-gray-900: #111827;
 	--tw-gray-600: #4b5563;
 	--background-color: #282c33;
+	--background-language-option: #3f4651;
+	--shadow-language-option: rgba(171, 178, 191, 0.8);
+	--gray-color: #d9d9d9;
+	--background-primary: rgba(39, 174, 96, 0.2);
+	--background-darken: rgba(18, 18, 18, 0.8);
+}
+
+
+/* xl media */
+@media (min-width: 1280px) {
+	.container {
+		padding: 0;
+		max-width: 1024px;
+	}
+}
+
+/* 2xl media */
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1024px;
+	}
 }

@@ -1,0 +1,240 @@
+.footer {
+	margin-top: auto;
+	display: flex;
+	width: 100%;
+	padding: 0.625rem 5% 2rem;
+	border-top: 1px solid var(--secondary-color);
+}
+
+.footer__wrapper {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	flex-direction: column;
+}
+
+.footer__container {
+	gap: 0.6rem;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	padding: 0 0 1rem;
+}
+
+.footer-text__container {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-text__wrapper {
+	gap: 0.625rem;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 0 0.625rem;
+} 
+
+.footer__email-wrapper {
+	display: flex;
+	width: fit-content;
+	align-items: center;
+}
+
+.footer__email {
+	position: relative;
+	font: 0.75rem/1rem 'Fira Code', 'Lucida Console',  sans-serif;
+	color: var(--secondary-color);
+}
+
+.footer__email::before {
+	content: "";
+	bottom: -5px;
+	left: 0;
+	position: absolute;
+	display: block;
+	width: 0%;
+	height: 1px;
+	background: var(--white-color);
+}
+
+.footer__email-wrapper:hover .footer__email {
+	color: var(--white-color);
+}
+
+.footer__email-wrapper:hover .footer__email::before {
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+.footer__email-wrapper:active {
+	transition: none;
+	transform: translateY(1px);
+	color: var(--white-color);
+}
+
+.footer__text p {
+	font: 0.75rem/1rem 'Fira Code', 'Lucida Console',  sans-serif;
+	color: var(--white-color);
+}
+
+.footer-media__wrapper {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-media__title {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0 0 0.5rem;
+}
+
+.footer-media__title h1 {
+	font: 500 1.125rem/1.25rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: #fff;
+}
+
+.footer__images-wrapper {
+	gap: 1rem;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footer__images-link {
+	display: flex;
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__social-icon {
+	color: var(--secondary-color);
+}
+
+.footer__social-icon--active {
+	color: var(--white-color);
+}
+
+.footer__images-link:active .footer__social {
+	transition: none;
+	transform: translateY(1px);
+}
+
+.footer__social-icon--active {
+	transition: none;
+}
+
+.footer-copy__wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-copy__wrapper {
+	font: 0.75rem/1rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--secondary-color);
+}
+
+/* sm media */
+@media (min-width: 640px) {
+	.footer__wrapper {
+		max-width: 640px;
+	}
+}
+
+/* md media */
+@media (min-width: 768px) {
+	.footer__wrapper {
+		max-width: 768px;
+	}
+
+	.footer-copy__wrapper {
+		font: 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif
+	}
+
+	.footer__text p {
+		font: 1rem/1.1875rem 'Fira Code', 'Lucida Console',  sans-serif
+	}
+	
+	.footer__email {
+		font: 1rem/1.1875rem 'Fira Code', 'Lucida Console',  sans-serif;
+	}
+
+	.footer__container {
+		gap: 1rem;
+		padding: 0 0 2.875rem;
+		flex-direction: row;
+	}
+}
+
+/* lg media */
+@media (min-width: 1024px) {
+	.footer {
+		padding-top: 2rem;
+	}
+	
+	.footer__wrapper {
+		max-width: 1024px;
+	}
+
+	.footer-media__wrapper {
+		width: 129px;
+	}
+
+	.footer-text__container {
+		align-items: flex-start;
+	}
+
+	.footer-media__title {
+		padding: 0 0 1rem;
+		justify-content: flex-start;
+	}
+
+	.footer-media__title h1 {
+		font: 500 1.5rem/1.6875rem 'Fira Code', 'Lucida Console', sans-serif;
+	}
+
+	.footer__images-wrapper {
+		gap: 0;
+		justify-content: space-between;
+	}
+
+	.footer__images-link {
+		justify-content: flex-start;
+	}
+
+	.footer-text__wrapper {
+		gap: 0;
+		padding: 0 0 1.1875rem;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+	.footer__email-wrapper {
+		margin-left: 1rem;
+	}
+}
+
+/* xl media */
+@media (min-width: 1280px) {
+	.footer__wrapper {
+		max-width: 1024px;
+	}
+}
+
+/* 2xl media */
+@media (min-width: 1536px) {
+	.footer__wrapper {
+		max-width: 1024px;
+	}
+}

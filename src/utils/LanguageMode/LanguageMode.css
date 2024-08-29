@@ -1,0 +1,37 @@
+.langues-option__wrapper {
+	margin-top: 0.3125rem;
+	padding: 0.625rem;
+	display: none;
+	position: absolute;
+	right: 5px;
+	top: 55px;
+	width: 36px;
+	height: fit-content;
+	background: #282C33;
+	border: 1px solid #abb2bf;
+}
+
+
+.langues-option {
+	font: 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: #abb2bf;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.langues-option__text:hover {
+	color: #fff;
+}
+
+.langues-option__list {
+	gap: 0.5rem;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

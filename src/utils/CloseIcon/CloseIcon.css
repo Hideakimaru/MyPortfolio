@@ -1,0 +1,50 @@
+.close-icon--hide {
+	display: none;
+}
+
+.close-icon {
+	cursor: pointer;
+	top: 16px;
+	right: 5%;
+	position: absolute;
+	display: flex;
+	width: 24px;
+	height: 24px;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	z-index: 1000000000;
+}
+
+.close-icon__cross {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: var(--gray-color);
+	transform: rotate(45deg);
+}
+
+.close-icon__cross::after {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: var(--gray-color);
+	transform: rotate(-90deg);
+}
+
+.close-icon:hover .close-icon__cross {
+	background: var(--white-color);
+}
+
+.close-icon:hover .close-icon__cross::after {
+	background: var(--white-color);
+}
+
+.close-icon:active {
+	transition: none;
+	transform: translateY(1px);
+}

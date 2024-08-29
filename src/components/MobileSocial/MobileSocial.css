@@ -1,0 +1,35 @@
+.mobile-menu__social--hide {
+	display: none;
+}
+
+.mobile-menu__social {
+	gap: 0.5rem;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobile-menu__social-link {
+	display: flex;
+	width: 64px;
+	height: 64px;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobile-menu__social-icon {
+	color: var(--secondary-color);
+}
+
+.mobile-menu__social-link:hover .mobile-menu__social-icon {
+	color: var(--white-color);
+	transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu__social-link:active .mobile-menu__social-icon {
+	transition: none;
+	transform: translateY(1px);
+	color: var(--white-color);
+}

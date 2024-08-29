@@ -1,0 +1,128 @@
+.container__right {
+	display: flex;
+	width: 100%;
+	height: 24px;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.navigation {
+	display: none;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.navigation--mobile {
+	display: none;
+}
+
+.navigation__list {
+	gap: 2rem;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nav__item {
+	font: 500 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--primary-color);
+}
+
+.nav__link {
+	font: 500 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--secondary-color);
+	transition: all 0.5s ease-in-out;
+}
+
+.nav__link:hover {
+	color: var(--white-color);
+}
+
+.nav__link:active {
+	transition: none;
+	transform: translateY(1px);
+}
+
+.nav__link--active {
+	font: 500 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--white-color);
+	transition: all 0.5s ease-in-out;
+}
+
+.nav__items {
+	display: flex;
+	width: fit-content;
+	justify-content: center;
+}
+
+.header-language__wrapper {
+	display: flex;
+	width: fit-content;
+	justify-content: flex-end;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.5 ease-in-out;
+}
+
+.header-language__wrapper:hover .header-language{
+	color: var(--white-color);
+}
+
+.header-language__wrapper:hover .header-language__image {
+	color: var(--white-color);
+}
+
+.header-language__wrapper:active {
+	transition: none;
+	transform: translateY(1px);
+}
+
+.header-language {
+	font: 600 2rem/2.125rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--secondary-color);
+}
+
+.header-language__image-wrapper {
+	display: flex;
+	width: fit-content;
+	height: 100%;
+}
+
+.header-language__image {
+	color: var(--secondary-color);
+}
+
+.mobile-menu__btn-wrapper {
+	display: flex;
+	width: 24px;
+	justify-content: flex-end;
+}
+
+/* lg media */
+@media (min-width: 1024px) {
+	.navigation {
+		display: flex;
+	}
+
+	.mobile-menu__btn-wrapper {
+		display: none;
+	}
+
+	.container__right {
+		align-items: center;
+	}
+}
+
+
+/* lg media */
+@media (min-width: 1024px) {
+	.header-language {
+		font: 600 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	}
+
+	.header-language__wrapper {
+		margin: 0 0 0 2rem;
+	}
+}

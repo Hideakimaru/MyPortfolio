@@ -1,0 +1,57 @@
+.mobile-menu__btn--hide {
+	display: none;
+}
+
+.mobile-menu__btn {
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	width: 100%;
+	height: 24px;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-color: transparent;
+}
+
+.mobile-menu__btn-line {
+	margin-top: 7px;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: var(--secondary-color);
+	transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu__btn-line::before {
+	top: 7px;
+	right: 0;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 65%;
+	height: 2px;
+	background: var(--secondary-color);
+	transition: all 0.5s ease-in-out;
+}
+
+.mobile-menu__btn:hover .mobile-menu__btn-line {
+	background: var(--white-color);
+}
+
+.mobile-menu__btn:hover .mobile-menu__btn-line::before {
+	background: var(--white-color);
+}
+
+.mobile-menu__btn:active {
+	transition: none;
+	transform: translateY(1px);
+}
+
+.mobile-menu__btn:active .mobile-menu__btn-line {
+	background: var(--white-color);
+}
+
+.mobile-menu__btn:active .mobile-menu__btn-line {
+	background: var(--white-color);
+}

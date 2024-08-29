@@ -1,0 +1,40 @@
+.header-logo__wrapper {
+	display: flex;
+	width: fit-content;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-logo__link {
+	display: flex;
+	flex-direction: row;
+}
+
+.header-logo__link:hover {
+	opacity: 0.8;
+	transition: all 0.5s ease-in-out;
+}
+
+.header-logo__link:active {
+	transition: none;
+	transform: translateY(1px);
+	opacity: 1;
+}
+
+.header-logo__image {
+	width: 16px;
+	height: 16px;
+}
+
+.header-logo__text {
+	font: 700 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--white-color);
+}
+
+/* lg media */
+@media (min-width: 1024px) {
+	.header-logo__wrapper {
+		align-items: flex-end;
+	}
+}

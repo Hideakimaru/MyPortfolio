@@ -1,0 +1,241 @@
+.home-profile {
+	display: flex;
+	width: 100%;
+	padding: 0 0 3.0625rem;
+}
+
+.home-profile__container {
+	display: flex;
+	width: 100%;
+	flex-direction: column-reverse;
+}
+
+.home-profile__wrapper {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.875rem 0 0;
+	text-align: center;
+}
+
+.home-profile__text-wrapper {
+	display: flex;
+	width: 100%;
+	margin: 0 0 1rem;
+}
+
+.home-profile__text-wrapper h1 {
+	font: 600 1.25rem/1.75rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: #fff;
+}
+
+.home-profile__text {
+	color: var(--primary-color);
+}
+
+.home-profile__desctiption {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.home-profile__desctiption p {
+	font: 0.75rem/1rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--secondary-color);
+	margin: 0 0 1.5rem;
+}
+
+.home-profile__button-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-profile__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	padding: 0.5rem 0.3125rem;
+	font: 500 0.75rem/1rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: #fff;
+	background: transparent;
+	border: 1px solid var(--primary-color);
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+
+.home-profile__button:hover {
+	background: var(--background-primary);
+}
+
+.home-profile__button:active {
+	transition: none;
+	background: var(--primary-color);
+	transform: translateY(1px);
+}
+
+.home-profile__image-wrapper {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	align-items: center;
+}
+
+.home-profile__image {
+	display: flex;
+	width: 200px;
+	justify-content: center;
+	margin: 0 0 15px;
+}
+
+.home-profile__image img{
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	border: 5px solid var(--primary-color);
+}
+
+.home-profile__status-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.home-profile__status-text {
+	display: flex;
+	align-self: center;
+	width: 100%;
+	align-items: center;
+	padding: 0.5rem;
+	border: 1px solid var(--secondary-color);
+}
+
+.home-profile__status-text h1{
+	font: 500 0.75rem/0.875rem 'Fira Code', 'Lucida Console', sans-serif;
+	color: var(--secondary-color);
+}
+
+.home-profile__status-box {
+	width: 16px;
+	height: 16px;
+	background: var(--primary-color);
+	margin: 0 0.625rem 0 0;
+}
+
+.home-profile__status-item {
+	color: #fff;
+	font-weight: 600;
+}
+
+/* sm media */
+@media (min-width: 640px) {
+	.home-profile__status-wrapper {
+		max-width: 350px; 
+	}
+
+	.home-profile__text-wrapper {
+		justify-content: center;
+	}
+
+}
+
+/* md media */
+@media (min-width: 768px) {
+	.home-profile__status-wrapper {
+		max-width: 100%; 
+	}
+
+	.home-profile__text-wrapper {
+		justify-content: center;
+	}
+
+	.home-profile__image {
+		width: 239px;
+	}
+
+	.home-profile__image img {
+		width: 239px;
+		height: 239px;
+	}
+
+	.home-profile__container {
+		flex-direction: row;
+	}
+
+	.home-profile__text-wrapper {
+		justify-content: flex-start;
+	}
+
+	.home-profile__desctiption {
+		justify-content: flex-start;
+	}
+	
+	.home-profile__wrapper {
+		padding: 1.875rem 0 0;
+		text-align: left;
+	}
+
+	.home-profile__text-wrapper h1 {
+		font: 600 2rem/2.5rem 'Fira Code', 'Lucida Console', sans-serif
+	}
+
+	.home-profile__status-text h1 {
+		font: 500 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	}
+
+	
+	.home-profile__desctiption p {
+		padding-right: 4rem;
+		font: 1rem/1.5625rem 'Fira Code', 'Lucida Console', sans-serif;
+	}
+
+	.home-profile__button {
+		width: 148px;
+		font: 500 1rem/1.1875rem 'Fira Code', 'Lucida Console', sans-serif;
+	}
+
+	.home-profile__button-wrapper {
+		justify-content: flex-start;
+	}
+
+}
+
+
+/* lg media */
+@media (min-width: 1024px) {
+	.home-profile__status-wrapper {
+		max-width: 100%;
+	}
+
+	.home-profile__image-wrapper {
+		width: 550px;
+	}
+
+	.home-profile__text-wrapper {
+		padding-right: 8.75rem;
+		margin: 0 0 2.125rem;
+	}
+	
+	.home-profile__wrapper {
+		padding: 3.125rem 0 0;
+	}
+
+	.home-profile__desctiption p {
+		padding-right: 14rem;
+	}
+
+	.home-profile {
+		padding: 0 0 6.125rem;
+	}
+}
+
+/* xl media */
+@media (min-width: 1280px) {
+	.home-profile__desctiption p {
+		padding-right: 16.5625rem;
+	}
+}
